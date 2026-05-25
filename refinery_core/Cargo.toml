@@ -1,11 +1,11 @@
 [package]
-name = "refinery-core"
-version = "0.9.2"
+name = "obeli-sk-refinery-core"
+version = "0.9.2-obeli-sk.1"
 authors = ["Katharina Fey <kookie@spacekookie.de>", "João Oliveira <hello@jxs.pt>"]
-description = "This crate should not be used directly, it is internally related to Refinery"
+description = "This crate should not be used directly, it is internally related to Refinery (obeli-sk fork)"
 license = "MIT OR Apache-2.0"
-documentation = "https://docs.rs/refinery/"
-repository = "https://github.com/rust-db/refinery"
+documentation = "https://docs.rs/obeli-sk-refinery-core/"
+repository = "https://github.com/obeli-sk/refinery"
 edition = "2021"
 
 [features]
@@ -37,7 +37,7 @@ url = "2.0"
 walkdir = "2.3.1"
 
 # allow multiple versions of the same dependency if API is similar
-rusqlite = { version = ">= 0.23, <= 0.39", optional = true }
+rusqlite = { version = ">= 0.23, <= 0.40", optional = true }
 postgres = { version = ">=0.17, <= 0.19", optional = true }
 native-tls = { version = "0.2", optional = true }
 postgres-native-tls = { version = "0.5", optional = true }

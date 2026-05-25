@@ -14,7 +14,7 @@ enums = ["refinery/enums"]
 int8-versions = ["refinery/int8-versions"]
 
 [dependencies]
-refinery = { path = "../refinery", features = ["rusqlite"] }
+refinery = { package = "obeli-sk-refinery", path = "../refinery", features = ["rusqlite"] }
 rusqlite = "0.39"
 barrel = { version = "0.7", features = ["sqlite3"] }
 log = "0.4"
