@@ -1,11 +1,11 @@
 [package]
-name = "refinery-macros"
-version = "0.9.0"
+name = "obeli-sk-refinery-macros"
+version = "0.9.0-obeli-sk.1"
 authors = ["Katharina Fey <kookie@spacekookie.de>", "João Oliveira <hello@jxs.pt>"]
-description = "This crate should not be used directly, it is internally related to Refinery"
+description = "This crate should not be used directly, it is internally related to Refinery (obeli-sk fork)"
 license = "MIT OR Apache-2.0"
-documentation = "https://docs.rs/refinery/"
-repository = "https://github.com/rust-db/refinery"
+documentation = "https://docs.rs/obeli-sk-refinery-macros/"
+repository = "https://github.com/obeli-sk/refinery"
 edition = "2018"
 
 [features]
@@ -16,7 +16,7 @@ int8-versions = ["refinery-core/int8-versions"]
 proc-macro = true
 
 [dependencies]
-refinery-core = { version = "0.9.0", path = "../refinery_core" }
+refinery-core = { package = "obeli-sk-refinery-core", version = "0.9.0-obeli-sk.1", path = "../refinery_core" }
 quote = "1"
 syn = "2"
 proc-macro2 = "1"
