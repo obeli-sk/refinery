@@ -1,3 +1,4 @@
+extern crate obeli_sk_refinery as refinery;
 use barrel::backend::Sqlite as Sql;
 
 #[cfg(feature = "rusqlite")]
