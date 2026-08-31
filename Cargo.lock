@@ -1344,6 +1344,69 @@ dependencies = [
 ]
 
 [[package]]
+name = "obeli-sk-refinery"
+version = "0.9.2-obeli-sk.1"
+dependencies = [
+ "assert_cmd",
+ "barrel 0.6.6-alpha.0",
+ "futures",
+ "obeli-sk-refinery-core",
+ "obeli-sk-refinery-macros",
+ "predicates",
+ "rustls",
+ "tempfile",
+ "time",
+ "tokio",
+ "tokio-util",
+]
+
+[[package]]
+name = "obeli-sk-refinery-core"
+version = "0.9.2-obeli-sk.1"
+dependencies = [
+ "async-trait",
+ "barrel 0.6.6-alpha.0",
+ "cfg-if",
+ "futures",
+ "log",
+ "mysql",
+ "mysql_async",
+ "native-tls",
+ "postgres",
+ "postgres-native-tls",
+ "regex",
+ "rusqlite",
+ "rustls",
+ "rustls-native-certs",
+ "serde",
+ "siphasher",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tiberius",
+ "time",
+ "tokio",
+ "tokio-postgres",
+ "tokio-postgres-rustls",
+ "tokio-util",
+ "toml 1.1.2+spec-1.1.0",
+ "url",
+ "walkdir",
+]
+
+[[package]]
+name = "obeli-sk-refinery-macros"
+version = "0.9.2-obeli-sk.1"
+dependencies = [
+ "heck",
+ "obeli-sk-refinery-core",
+ "proc-macro2",
+ "quote",
+ "regex",
+ "syn",
+ "tempfile",
+]
+
+[[package]]
 name = "objc2-core-foundation"
 version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1731,77 +1794,14 @@ dependencies = [
 ]
 
 [[package]]
-name = "refinery"
-version = "0.9.2"
-dependencies = [
- "assert_cmd",
- "barrel 0.6.6-alpha.0",
- "futures",
- "predicates",
- "refinery-core",
- "refinery-macros",
- "rustls",
- "tempfile",
- "time",
- "tokio",
- "tokio-util",
-]
-
-[[package]]
-name = "refinery-core"
-version = "0.9.2"
-dependencies = [
- "async-trait",
- "barrel 0.6.6-alpha.0",
- "cfg-if",
- "futures",
- "log",
- "mysql",
- "mysql_async",
- "native-tls",
- "postgres",
- "postgres-native-tls",
- "regex",
- "rusqlite",
- "rustls",
- "rustls-native-certs",
- "serde",
- "siphasher",
- "tempfile",
- "thiserror 2.0.18",
- "tiberius",
- "time",
- "tokio",
- "tokio-postgres",
- "tokio-postgres-rustls",
- "tokio-util",
- "toml 1.1.2+spec-1.1.0",
- "url",
- "walkdir",
-]
-
-[[package]]
 name = "refinery-examples"
 version = "0.8.12"
 dependencies = [
  "barrel 0.7.0",
  "env_logger",
  "log",
- "refinery",
+ "obeli-sk-refinery",
  "rusqlite",
-]
-
-[[package]]
-name = "refinery-macros"
-version = "0.9.2"
-dependencies = [
- "heck",
- "proc-macro2",
- "quote",
- "refinery-core",
- "regex",
- "syn",
- "tempfile",
 ]
 
 [[package]]
@@ -1815,8 +1815,8 @@ dependencies = [
  "env_logger",
  "human-panic",
  "log",
+ "obeli-sk-refinery-core",
  "predicates",
- "refinery-core",
  "regex",
  "tokio",
  "toml 0.8.23",
